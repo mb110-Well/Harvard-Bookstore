@@ -1,6 +1,6 @@
-install.packages("gitcreds")
+library(tidyverse)
+library(rvest)
 
-# ;oasd; g'
-# hiii
+html <- read_html("https://www.harvard.com/events")
 
-print('hi')
+html |> html_element(".view-content")
